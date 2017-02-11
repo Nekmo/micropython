@@ -86,3 +86,26 @@ Led 4 pines (multicolor)
 ########################
 El anodo (el pin más largo) va a tierra, y los otros 3 a otros pines. Teniendo en cuenta el ánodo, los pines corresponden a: ``R - A - G - B``, donde *R* es Red, *A* en Ánodo, *G* es Green y *B* es Blue.
 
+Para iniciarlos:
+
+.. code-block::
+
+    red = machine.PWM(machine.Pin(12))
+    green = machine.PWM(machine.Pin(14))
+    blue = machine.PWM(machine.Pin(4))
+    red.freq(500)
+    green.freq(500)
+    blue.freq(500)
+    
+Colores básicos:
+    
+.. code-block::
+
+    # Rojo
+    red.duty(1000); green.duty(0); blue.duty(0)
+    # Verde
+    red.duty(0); green.duty(1000); blue.duty(0)
+    # Azul
+    red.duty(0); green.duty(0); blue.duty(1000)
+
+
