@@ -81,3 +81,8 @@ Frecuencia máxima (invisible ojo humano), intensidad baja:
 
     pwm4.freq(1000)
     pwm4.duty(2)
+
+Led 4 pines (multicolor)
+########################
+El anodo (el pin más largo) va a tierra, y los otros 3 a otros pines. Teniendo en cuenta el ánodo, los pines corresponden a: ``R - A - G - B``, donde *R* es Red, *A* en Ánodo, *G* es Green y *B* es Blue.
+
