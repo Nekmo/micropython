@@ -108,4 +108,30 @@ Colores básicos:
     # Azul
     red.duty(0); green.duty(0); blue.duty(1000)
 
+Otros colores:
 
+.. code-block::
+
+    BLANCO = '#ffffff'
+    AMARILLO = '#f0ab00'
+    GRIS = '#9b9b9b'
+    AZUL_CLARO = '#0099cc'
+    ROJO = '#c51f24'
+    MORADO = '#7d0063'
+    VERDE_CLARO = '#97bd3d'
+    TURQUESA = '#007a4d'
+    AZUL_OSCURO = '#003f6a'
+    NARANJA = '#e98300'
+    ROSA = '#ed1a37'
+    AMARILLO = '#fcd900'
+    
+    def hex_to_rgb(value):
+        """Return (red, green, blue) for the color given as #rrggbb."""
+        value = value.lstrip('#')
+        lv = len(value)
+        return tuple(int(value[i:i + lv // 3], 16) for i in range(0, lv, lv // 3))
+
+    def set_color(r, g, b):
+        red.duty(r * 4); green.duty(g * 4); blue.duty(b * 4)
+        
+    set_color(*hex_to_rgb(MORADO))
