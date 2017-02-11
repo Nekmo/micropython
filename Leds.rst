@@ -65,7 +65,7 @@ Intensidad media con parpadeos muy rápidos, casi indistinguibles, pero visibles
 
 .. code-block::
 
-    pwm4.freq(10)
+    pwm4.freq(40)
     pwm4.duty(500)
 
 Fogonazos instantáneos:
