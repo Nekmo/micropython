@@ -22,3 +22,9 @@ Descarga firmware: http://micropython.org/download#esp8266
 
 Tras esto estará la red Wifi ``MicroPython-******`` disponible.
 
+Consola por USB
+===============
+
+.. code-block::
+
+    sudo picocom -b 115200 /dev/ttyUSB0
