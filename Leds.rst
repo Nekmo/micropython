@@ -134,4 +134,4 @@ Otros colores:
     def set_color(r, g, b):
         red.duty(r * 4); green.duty(g * 4); blue.duty(b * 4)
         
-    set_color(*hex_to_rgb(MORADO))
+    set_color(*hex_to_rgb(MORADO))  # Establecer color morado
