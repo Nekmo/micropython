@@ -8,12 +8,14 @@ a usar el módulo.
 
     import dht
     d = dht.DHT11(machine.Pin(4))
-    d.measure()
+    d.measure()  # Hacer una lectura
     d.temperature()  # 23
     d.humidity()  # 37
     
 Hay 2 módulos posibles: DHT11 y DTH22. La diferencia entre ambos radica en su precio y 
 precisión, siendo el segundo el mejor y más caro.
+
+Cada vez que se ejecuta ``measure()`` se realiza una lectura. Cada vez que se ejecute ``temperature()`` y ``humidity()`` se devuelven los valores de la última lectura.
 
 DTH11 vs DTH22
 ==============
