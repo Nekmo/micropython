@@ -8,9 +8,11 @@ no la haya, teniendo una amplia variación entre ambos estados. Además, son sum
 Aunque pueden usarse los pines digitales, lo mejor es utilizar el pin analógico de entrada
 (en Wemos D1, el pin A0) para poder detectar un gran espectro de cambios.
 
-from machine import ADC
-adc = ADC(0)
-adc.read()  # 1024 con habitación iluminada
-adc.read()  # 744 habitación mal iluminada
-adc.read()  # 318 habitación iluminada por los monitores
-adc.read()  # 30 como en el anterior, pero además tapando el sensor
+.. code-block::
+
+    from machine import ADC
+    adc = ADC(0)
+    adc.read()  # 1024 con habitación iluminada
+    adc.read()  # 744 habitación mal iluminada
+    adc.read()  # 318 habitación iluminada por los monitores
+    adc.read()  # 30 como en el anterior, pero además tapando el sensor
